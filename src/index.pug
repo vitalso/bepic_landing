@@ -1,0 +1,241 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' , content='IE=edge')
+		meta(name='viewport' , content='width=device-width , initial-scale=1')
+		meta(name='description' , content='')
+		meta(name='keywords' , content='')
+		title Landing
+		link(rel='icon' , href='favicon.ico' type='image/x-icon')
+		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" , integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" , crossorigin="anonymous")
+		link(rel='stylesheet' , href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' , integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' , crossorigin='anonymous')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css')
+		link(rel='stylesheet' , href='css/animate.css')
+		link(rel='stylesheet' , href='css/style.css')
+		//if lt IE 9
+			script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+			script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+	body
+
+		header
+
+			.container
+
+				nav.navbar.navbar-expand-lg
+
+					.col-md-3.col-sm-3.col-3
+						a(href='index.html').navbar-brand.logo
+							img(src="images/logo.png", alt="")
+
+					.col-md-9.col-sm-9.col-9
+						button(type='button' , data-toggle='collapse' , data-target='#navbarsExampleDefault' , aria-controls='navbarsExampleDefault' , aria-expanded='false' , aria-label='Toggle navigation').navbar-toggler.navbar-toggler-right.ml-auto
+							span.line
+							span.line
+							span.line
+
+						div#navbarsExampleDefault.collapse.navbar-collapse
+										
+							ul.navbar-nav.ml-auto
+								li.nav-item
+									a(href='#index').nav-link.active-link Главная
+								li.nav-item
+									a(href='#mission').nav-link Миссия
+								li.nav-item
+									a(href='#capsule').nav-link Капсулы
+								li.nav-item
+									a(href='#reg').nav-link Регистрация
+								li.nav-item
+									a(href='#partners').nav-link Партнерская программа
+
+		main
+
+			section#index.intro.vertical-align
+				.container
+					.row
+						.col-8.offset-2
+							h1 Зарегистрируйтесь в Bepic прямо сейчас
+							h4 Впустите в свою жизнь здоровье и <br> финансовую независимость!
+							a(href="#order").primary__btn Оставить заявку
+
+							.text-center
+								a(href="#about").scroll
+
+			section#about.about
+				.container
+					
+					.row.align-items
+						.col-md-6.mb-3.mb-md-0
+							h4 Bepic - это компания, с которой именно вы можете построить собственный бизнес, находясь в любой точке страны!
+							h4 Если вы хотите зарабатывать хороший (и пассивный) доход - эта компания для вас!
+
+						.col-md-6
+							img(src="images/photo-2.png", alt="")
+
+			section.success
+				.container
+					h2 Здесь есть все необходимые <br> компоненты для успеха:
+
+					.row
+						.col-md-4
+							.item
+								.item__icon
+									img(src="images/icons/icon-2.png", alt="")
+								p Качественный <br> продукт
+						.col-md-4
+							.item
+								.item__icon
+									img(src="images/icons/icon-3.png", alt="")
+								p Обучение от <br> компании
+						.col-md-4
+							.item
+								.item__icon
+									img(src="images/icons/icon-4.png", alt="")
+								p Поддержка <br> и сопровождение
+
+			section#mission
+				.container
+					.row.align-items
+						.col-md-6
+							img(src="images/photo-3.png", alt="")
+
+						.col-md-6.mt-3.mt-md-0
+							h4 Миссия компании Bepic - улучшать жизнь клиентов и партнеров с помощью проверенной продукции. Здесь помогают реализовать мечты и добиться финансовой независимости.
+							h4 И все это - за счет уникального здорового питания и добавок, которые устраняют проблемы со здоровьем.
+
+			section.program
+				.container
+
+					.row.align-items
+						.col-md-5
+							p Компания Bepic разработала эффективную и понятную партнерскую программу. В её основе - новый уникальный формат сотрудничества, у которого нет аналогов.
+							p Она открывает новые возможности для бизнеса, которые вы можете реализовать, даже не выходя из дома! Все продуманно, проверено на практике и одобрено теми, кто уже стал успешным вместе с Bepic.
+
+						.col-md-6.offset-md-1.mt-3.mt-md-0
+							img(src="images/photo-4.png", alt="")
+
+			section#capsule.box
+				.container
+
+					.row
+						.col-md-4
+							.box__item
+								.box__item__title Acceler8 Detox <br> (Фиолетовая капсула)
+								ul
+									li - улучшает пищеварение и способствует снижению веса;
+									li - очищает от токсинов и выводит вредные вещества;
+									li - укрепляет иммунитет;
+									li - состоит из натуральных компонентов.
+
+						.col-md-4
+							.box__item
+								.box__item__title Acceler8 Sleep <br> (Белая капсула)
+								ul
+									li - улучшает сон и снимает стресс;
+									li - насыщает организм кислородом во время сна;
+									li - восстанавливает здоровье на клеточном уровне;
+									li - содержит в составе аминокислоты.
+
+						.col-md-4
+							.box__item
+								.box__item__title ELEV 8
+								ul
+									li - имеет эффект клеточного омоложения;
+									li - улучшает память и повышает физическую активность;
+									li - укрепляет иммунную систему;
+									li - эффект от приема капсул заметный мгновенно.
+
+			section#reg.sign__in
+				.container
+					.row
+
+						.col-md-6
+							.number__row
+								.number__item
+									b 180
+									span Стран мира
+
+								.number__item
+									b 0
+									span Вложений
+							.number__row
+								.number__item
+									b 328
+									span Партнёров
+
+								.number__item
+									b 100
+									span % результата
+
+						.col-md-6
+							h3 Как зарегистрироваться
+							p Пройти регистрацию в компании Bepic можно быстро и всего за несколько кликов. <br> Регистрация бесплатная и не требует каких-либо вложений. Зарегистрироваться можно из любой точки мира через официальный сайт компании.
+							h4 Подробная инструкция регистрации здесь:
+							a(href="#").primary__btn Зарегистрироваться
+
+			section#partners.partners
+				.container
+					.row.align-items
+						.col-md-8
+							h3 Партнерская программа Bepic
+							h4 Пройдите БЕСПЛАТНУЮ регистрацию в компании Bepic и начните зарабатывать прямо сейчас!
+
+						.col-md-4.text-center.mt-3.mt-md-0
+							img(src="images/icons/icon-5.png", alt="")
+
+			section.box
+				.container
+					h3.text-center Партнерская программа <br> предусматривает несколько <br> вариантов заработка:
+
+					.row
+						.col-md-5.offset-md-1
+							.box__item.p-5
+								.box__number
+									b 1
+									span Ежемесячный доход 3 000 - 30 000р.
+								p Для этого достаточно пройти регистрацию и получать 50% от стоимости покупки каждого вашего клиента, даже если сами лично продукцию не покупаете.
+						.col-md-5
+							.box__item.p-5
+								.box__number
+									b 2
+									span Ежемесячный доход от 50 000 руб. до нескольких миллионов.
+								p Для этого нужно приглашать клиентов и партнеров и самостоятельно быть активным покупателем и потребителем продукции Bepic. Здесь возможности не ограничены!
+
+			section#order.contact
+				.container
+
+					.row
+						.col-sm-12.col-md-6.offset-md-3
+							h3.text-center Хотите узнать более подробно о партнерской программе?
+							p.text-center Заполняйте форму заявки - и мы в ближайшее время вам перезвоним, чтобы ответить на все вопросы и проконсультировать!
+
+							form(action="post.php")#order__form
+								div
+									input(type="text" , name="name" , placeholder="Имя")
+								div
+									input(type="email" , name="email" , placeholder="Email")
+								div
+									textarea(name="message" , placeholder="Сообщение")
+								div.text-center
+									input(type="submit" , value="Заказать звонок").primary__btn
+							.success-submited.text-center(style="display: none") Спасибо, ваше сообщение отправлено!
+
+			footer.text-center
+				.container
+					span © 2019 Bepic. Все права защищены
+
+
+		// jQuery & Bootstrap scripts
+		script(src='https://code.jquery.com/jquery-3.3.1.min.js' , integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' ,  crossorigin='anonymous')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' , integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' , crossorigin='anonymous')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' , integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' , crossorigin='anonymous')
+
+		// Slick slider
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js')
+
+		// Parallax
+		script(src='js/parallax.js')
+				
+		// Main script
+		script(src='js/main.js')
